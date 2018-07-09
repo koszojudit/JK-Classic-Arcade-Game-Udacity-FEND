@@ -3,7 +3,7 @@
 Contents:
 
 - [Project Description](#project-description)
-- [How To Run The Application](#how-to-run-the -application)
+- [How To Run The Application](#how-to-run-the-application)
 - [How To Play The Game](#how-to-play-the-game)
 
 ## Project Description
