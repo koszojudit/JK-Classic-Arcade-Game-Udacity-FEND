@@ -1,6 +1,31 @@
-frontend-nanodegree-arcade-game
-===============================
+# Frogger Arcade Game
 
-Students should use this [rubric](https://review.udacity.com/#!/projects/2696458597/rubric) for self-checking their submission. Make sure the functions you write are **object-oriented** - either class functions (like Player and Enemy) or class prototype functions such as Enemy.prototype.checkCollisions, and that the keyword 'this' is used appropriately within your class and class prototype functions to refer to the object the function is called upon. Also be sure that the **readme.md** file is updated with your instructions on both how to 1. Run and 2. Play your arcade game.
+Contents:
 
-For detailed instructions on how to get started, check out this [guide](https://docs.google.com/document/d/1v01aScPjSWCCWQLIpFqvg3-vXLH2e8_SZQKC8jNO0Dc/pub?embedded=true).
+- [Project Description](#project-description)
+- [How To Run The Application](#how-to-run-the -application)
+- [How To Play The Game](#how-to-play-the-game)
+
+## Project Description
+This is 4th project during the Udacity Front-End Web Developer Nanodegree Program.
+Students were given a [starter code from Udacity](https://github.com/udacity/frontend-nanodegree-arcade-game) to to recreate the classic arcade game Frogger.
+
+## How To Run The Application
+
+OPTION #1: Play online
+https://koszojudit.github.io/JK-Classic-Arcade-Game-Udacity-FEND/
+
+OPTION #2: Install on your computer
+
+- [Download the code](https://github.com/koszojudit/JK-Classic-Arcade-Game-Udacity-FEND/archive/master.zip)
+- Unzip `master.zip`
+- Open `index.html`
+
+## How To Play The Game
+
+- In this game you have a Player avatar.
+- Your goal is to reach the water, without colliding into any one of the enemies.
+- You can move left, right, up and down.
+- The enemies move in varying speeds on the paved block portion of the scene.
+- Once you collide with an enemy, the game is reset and you move back to the start square.
+- If you reach the water the game is won.

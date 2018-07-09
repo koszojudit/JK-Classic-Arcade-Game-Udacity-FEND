@@ -1,9 +1,4 @@
 
-// Draw Enemies and the Player onto the screen > no separate render() methods required for player and enamy classes
-Object.prototype.render = function() {
-  ctx.drawImage(Resources.get(this.sprite), this.x, this.y);
-};
-
 // --- ENEMY CLASS --- //
 
 // Enemies our player must avoid
@@ -14,6 +9,11 @@ var Enemy = function(x, y) {
   this.x = x;
   this.y = y;
   this.velocity = 100 + Math.floor(Math.random() * 150);
+};
+
+// Draw the enemy on screen
+Enemy.prototype.render = function() {
+    ctx.drawImage(Resources.get(this.sprite), this.x, this.y);
 };
 
 // Update the enemy's position (loop when off canvas)
@@ -33,6 +33,8 @@ Enemy.prototype.collide = function(player) {
   }
 };
 
+
+
 // --- PLAYER CLASS --- //
 
 // Player with image and location
@@ -40,6 +42,11 @@ var Player = function () {
   this.sprite = 'images/char-boy.png';
   this.x = 200;
   this.y = 400;
+};
+
+// Draw the player on screen
+Player.prototype.render = function() {
+    ctx.drawImage(Resources.get(this.sprite), this.x, this.y);
 };
 
 // Moves the player object in the direction of the arrow key clicked
@@ -83,9 +90,10 @@ Player.prototype.update = function () {
 
 // Reset Player to start position when reaching water or colliding with enemy
 Player.prototype.reset = function() {
-  player.x = 200;
-  player.y = 400;
+  this.x = 200;
+  this.y = 400;
 };
+
 
 
 // --- INSTANTIATE --- //
@@ -106,6 +114,7 @@ for (var i = 0; i < 3; i++){
     allEnemies.push(new Enemy(-300, 230));
   }, 2500);
 }
+
 
 // --- HELPER METHODS --- //
 
