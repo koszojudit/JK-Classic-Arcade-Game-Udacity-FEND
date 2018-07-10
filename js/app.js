@@ -55,24 +55,24 @@ Player.prototype.handleInput = function (userInput) {
   switch (userInput) {
 
     case 'left':
-    if (player.x >= 50) {
-      player.x -= 100;
+    if (this.x >= 50) {
+      this.x -= 100;
     }
     break;
 
     case 'right':
-    if (player.x <= 300) {
-      player.x += 100;
+    if (this.x <= 300) {
+      this.x += 100;
     }
     break;
 
     case 'up':
-    if (player.y > 60) {
-      player.y -= 80;
+    if (this.y > 60) {
+      this.y -= 80;
     } else {
       // player.score += 100;
-      player.y = 380;
-      player.x = 200;
+      this.y = 380;
+      this.x = 200;
     }
     break;
 
